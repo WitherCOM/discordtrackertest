@@ -8,7 +8,7 @@ $names = [
 date_default_timezone_set("Europe/Budapest");
 $dbhost = 'wither.ddns.net';
 $dbport = 33060;
-$dbuser = 'log_reader';
+$dbuser = 'python_log';
 $dbpass = '2000';
 $conn = mysqli_connect($dbhost, $dbuser, $dbpass, 'python_log', $dbport);
 mysqli_set_charset($conn, 'utf8mb4');
