@@ -13,6 +13,7 @@ $dbport = 33060;
 $dbuser = 'python_log';
 $dbpass = '2000';
 $conn = mysqli_connect($dbhost, $dbuser, $dbpass, 'python_log', $dbport);
+die($conn);
 mysqli_set_charset($conn, 'utf8mb4');
 
 ?>
@@ -52,7 +53,6 @@ mysqli_set_charset($conn, 'utf8mb4');
         <?php if (array_key_exists($_SERVER['REQUEST_URI'], $names)) : ?>
             <?php
             $guild = $names[$_SERVER['REQUEST_URI']];
-			die($guild);
             $color = "";
             if ($guild == 'NoBotiIzAllowed') {
                 $color = 'bg-danger';
