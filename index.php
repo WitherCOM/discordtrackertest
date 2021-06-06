@@ -52,6 +52,7 @@ mysqli_set_charset($conn, 'utf8mb4');
         <?php if (array_key_exists($_SERVER['REQUEST_URI'], $names)) : ?>
             <?php
             $guild = $names[$_SERVER['REQUEST_URI']];
+			die($guild);
             $color = "";
             if ($guild == 'NoBotiIzAllowed') {
                 $color = 'bg-danger';
