@@ -1,5 +1,7 @@
 <!doctype html>
 <?php
+
+$_SERVER['REQUEST_URI'] = "/fesz";
 $names = [
     '/fesz' => 'A feszültségkülönbség 1 dzsúl',
     '/noboti' => 'NoBotiIzAllowed',
